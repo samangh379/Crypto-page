@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    grid-template-columns: 30px 120px 120px 120px 120px 120px;
+
+    padding: 15px 40px;
+    color: #212529;
+    border-bottom: 1px solid silver;
+    font-size: 15px;
+    margin: auto;
+}
+.container:last-child {
+    border: none;
+}
+.container span {
+    margin: 0 40px;
+}
+.name {
+    font-weight: bold;
+}
+
+.image1 {
+    width: 30px;
+}
+
+.greenColor {
+    color: rgb(12, 154, 12);
+}
+
+.redColor {
+    color: rgb(190, 32, 32);
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        flex-wrap: wrap;
+    }
+}
